@@ -5,7 +5,7 @@ body{
     /* Margen pa´ dentro */
     padding: 0;
     /* Tamaño de texto */
-    font-size: 15px;
+    font-size: 13px;
     /* Fuente del texto */
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -13,6 +13,11 @@ body{
 /********************************************/
 /***********************************/
 /* Navegación */
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
 
 header{
     /* width - ancho /// height-alto*/
@@ -30,8 +35,8 @@ header nav{
 
 header nav .nav-right-section{
     /* Eliminar viñetas*/
-    list-style:none;
-    width: 350px;
+    list-style: none;
+    width: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,25 +50,27 @@ nav .nav-right-section a{
     /*línea debajo de texto */
     text-decoration: none;
     /*Margen derecho */
-    margin-right: 30px;
+    margin-right: 25px;
 }
 
-nav .nav-right-section .menu{ 
+nav .nav-right-section .menu-icon{ 
     background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
-    width: 30px;
-    height: 30px;
+    width: 26px;
+    height: 26px;
     /*Contiene a la imagen*/
     background-size: contain; 
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 nav .nav-right-section img{
     /*Magin left - margen a la izquierda SOLAMENTE*/
-    margin-left: 20px;
+    margin-left: 10px;
     /* Redondear */
-    border-radius: 150px;
+    border-radius: 50px;
     /* width - anchura*/
-    width: 35px;
+    width: 40px;
+    height: 40px;
 }
 
 /*************************************************/
@@ -73,28 +80,31 @@ nav .nav-right-section img{
 
 main{
     text-align: center;
-    margin-top: 200px;
+    margin-top: 150px;
 }
+
 /*sección logo*/
 main .main-logo{
-    width: 300px;
+    width: 530px;
     background-color:#5cf0b7;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 }
+
 /*logo Google*/
 main .main-logo img{
-    height: 100px;
+    height: 120px;
+    width: 330px;
 }
 
 /*seccion input*/
 main .main-input{
     /* widht - anchura */
-    width: 500px;
+    width: 530px;
     /* margenes y centrado */
     margin: 0 auto;
     /* separar input de botones */
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 }
 
 /*cajita gris redondeada buscador*/
@@ -102,8 +112,8 @@ main .main-input-container{
     /*ancho de línea, estilo y color*/
     border: 1px solid #dfe1e5;
     /* bordes redondeados */
-    border-radius: 30px;
-    width: 500px;
+    border-radius: 100px;
+    width: 525px;
     /* mis componentes sean flexibles y se muevan */
     display: flex;
     justify-content: center;
@@ -111,8 +121,8 @@ main .main-input-container{
 }
 
 main .main-input input{
-    height: 50px;
-    width: 600px;
+    height: 40px;
+    width: 450px;
     /*quitar borde negro*/
     border: none;
     /*quitar borde azul al hacer click */
@@ -148,8 +158,8 @@ main .main-input .micro-icon{
 
 main .main-input .cam-icon{
     background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
-    width: 17px;
-    height: 17px;
+    width: 18px;
+    height: 18px;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -170,24 +180,25 @@ main .main-buttons div{
 
 main .main-buttons button{
     border: 0;
-    height: 40px;
-    background-color: #f8f9fa;
+    height: 36px;
+    background-color: #f2f2f2;
     font-size: 14px;
-    color: #3c4043;
-    border-radius: 4px;
-    margin-right: 10px;
+    color: #5f6368;
+    border-radius: 8px;
+    margin-right: 15px;
     padding: 0 15px;
     
 }
 /*nos permite agregarle diseño al poner cursor sobre elemento*/
 main .main-input-container:hover{
-    box-shadow: 0 0 5px #20212447;
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
 }
 main .main-buttons button:hover{
     color: #202124;
 /* ancho de linea  - estilo de lÍnea - color */
-border: 1PX solid #dadce0;
-box-shadow: 0 1px 1px rgba (0,0,0,.1);
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba (0,0,0,.1);
 }
 
 footer{
@@ -198,7 +209,7 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    font-size: 18px;
+    font-size: 13px;
     background-color: #dfdee0;
     border-top: 1px solid #e4e4e4;
 }
@@ -215,13 +226,11 @@ footer .mex{
 }
 
 footer ul{
-    margin: 15px;
+    margin: 10px;
     list-style: none;
     display: flex;
     padding-left: 0;
     font-size: 15px;
-
-
 }
 
 .footer-left {
@@ -236,7 +245,6 @@ footer ul{
 footer ul li a {
     margin: 30px;
     color: #5f6368;
-   
    
 }
 
